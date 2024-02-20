@@ -1,10 +1,26 @@
-import "./App.css"
+import { Provider } from "react-redux";
+import "./App.css";
+import Body from "./components/Body";
+import Head from "./components/Head";
+import store from "./components/utils/store";
 
 function App() {
   return (
     <div>
-      <h1 className="bg-red-400">Youtube Clone</h1>
+      <Provider store={store}>
+        <Head />
+        <Body />
+      </Provider>
     </div>
+
+    // Head
+    // Body
+    // Sidebar
+    //    MainItems
+    // MainContainer
+    //    ButtonList
+    //    VideoContainer
+    //    VideoCard
   );
 }
 
